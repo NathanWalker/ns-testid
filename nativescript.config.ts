@@ -1,10 +1,13 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'org.nativescript.testid',
   appPath: 'app',
   appResourcesPath: 'App_Resources',
+  ios: {
+    id: 'org.nativescript.testid',
+  },
   android: {
+    id: 'org.nativescript.testid.android',
     v8Flags: '--expose_gc',
     markingMode: 'none'
   }
